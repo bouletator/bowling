@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 /**
  * Created by 21504999 on 07/03/2016.
  */
@@ -32,8 +34,20 @@ public class Frame {
         return strike;
     }
 
+
     public int calculScore()
     {
         return this.score_lancer_1 + this.score_lancer_2;
+    }
+
+    public int calculScore(Frame f)
+    {
+        return f.calculScore(f) + 10
+        return f.calculScore() + 10;
+    }
+
+    public int calculScore(int lancer)
+    {
+        return lancer + 10;
     }
 }
