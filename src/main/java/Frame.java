@@ -5,7 +5,6 @@ public class Frame {
 
     private int score_lancer_1;
     private int score_lancer_2;
-    private int score;
     private boolean spare;
     private boolean strike;
 
@@ -13,7 +12,6 @@ public class Frame {
     {
         this.score_lancer_1 = lancer_1;
         this.score_lancer_2 = lancer_2;
-        this.score = 0;
         this.spare = spare;
         this.strike = strike;
     }
@@ -36,14 +34,6 @@ public class Frame {
 
     public int calculScore()
     {
-        if(this.spare)
-        {
-
-        }
-        else if(this.strike)
-        {
-
-        }
-        else return this.score_lancer_1 + this.score_lancer_2;
+        return this.score_lancer_1 + this.score_lancer_2;
     }
 }
