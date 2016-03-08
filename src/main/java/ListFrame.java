@@ -35,10 +35,7 @@ public class ListFrame {
             }
             else if(this.list.get(i).isSpare())
             {
-                if(this.list.get(i+1).isStrike() || this.list.get(i+1).isSpare())
-                    score += this.list.get(i).calculScore() + 5;
-                else
-                    score += this.list.get(i).calculScore() + this.list.get(i+1).getScore_lancer_1();
+                score += this.list.get(i).calculScore() + this.list.get(i+1).getScore_lancer_1();
             }
             else score += this.list.get(i).calculScore();
         }
