@@ -17,9 +17,6 @@ public class ListFrame {
         this.list.add(f);
     }
 
-
-
-
     public int calculScore()
     {
         int score = 0;
@@ -35,7 +32,8 @@ public class ListFrame {
             }
             else if(this.list.get(i).isSpare())
             {
-                score += this.list.get(i).calculScore() + this.list.get(i+1).getScore_lancer_1();
+               if(i == 9) score += this.list.get(i).calculScore() + this.list.get(i).getScore_lancer_3();
+               else score += this.list.get(i).calculScore() + this.list.get(i+1).getScore_lancer_1();
             }
             else score += this.list.get(i).calculScore();
         }
