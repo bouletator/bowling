@@ -7,7 +7,7 @@ import java.util.ArrayList;
  */
 public class Main {
     @Test
-    public void main()
+    public void Test_01()
     {
         ListFrame lf = new ListFrame();
 
@@ -22,39 +22,56 @@ public class Main {
        lf.add(new Frame(10, 0, false, true));
        lf.add(new Frame(8, 9, false, false));*/
 
-/*        lf.add(new Frame(9, 0, false, false));
-        lf.add(new Frame(9, 0, false, false));
-        lf.add(new Frame(9, 0, false, false));
-        lf.add(new Frame(9, 0, false, false));
-        lf.add(new Frame(9, 0, false, false));
-        lf.add(new Frame(9, 0, false, false));
-        lf.add(new Frame(9, 0, false, false));
-        lf.add(new Frame(9, 0, false, false));
-        lf.add(new Frame(9, 0, false, false));
-        lf.add(new Frame(9, 0, false, false));*/
+        lf.add(new Frame(9, 0));
+        lf.add(new Frame(9, 0));
+        lf.add(new Frame(9, 0));
+        lf.add(new Frame(9, 0));
+        lf.add(new Frame(9, 0));
+        lf.add(new Frame(9, 0));
+        lf.add(new Frame(9, 0));
+        lf.add(new Frame(9, 0));
+        lf.add(new Frame(9, 0));
+        lf.add(new Frame(9, 0));
 
-/*        lf.add(new Frame(10, 0, false, true));
-        lf.add(new Frame(10, 0, false, true));
-        lf.add(new Frame(10, 0, false, true));
-        lf.add(new Frame(10, 0, false, true));
-        lf.add(new Frame(10, 0, false, true));
-        lf.add(new Frame(10, 0, false, true));
-        lf.add(new Frame(10, 0, false, true));
-        lf.add(new Frame(10, 0, false, true));
-        lf.add(new Frame(10, 0, false, true));
-        lf.add(new Frame(10, 0, false, true));
-        lf.add(new Frame(10, 0, false, false));*/
 
-        lf.add(new Frame(5, 0, true, false));
-        lf.add(new Frame(5, 0, true, false));
-        lf.add(new Frame(5, 0, true, false));
-        lf.add(new Frame(5, 0, true, false));
-        lf.add(new Frame(5, 0, true, false));
-        lf.add(new Frame(5, 0, true, false));
-        lf.add(new Frame(5, 0, true, false));
-        lf.add(new Frame(5, 0, true, false));
-        lf.add(new Frame(5, 0, true, false));
-        lf.add(new Frame(5, 0, false, false));
+        System.out.println(lf.calculScore());
+    }
+
+    @Test
+    public void Test_02()
+    {
+        ListFrame lf = new ListFrame();
+
+        lf.add(new Frame(10, 0));
+        lf.add(new Frame(10, 0));
+        lf.add(new Frame(10, 0));
+        lf.add(new Frame(10, 0));
+        lf.add(new Frame(10, 0));
+        lf.add(new Frame(10, 0));
+        lf.add(new Frame(10, 0));
+        lf.add(new Frame(10, 0));
+        lf.add(new Frame(10, 0));
+        lf.add(new Frame(10, 0));
+
+
+        System.out.println(lf.calculScore());
+    }
+
+    @Test
+    public void Test_03()
+    {
+        ListFrame lf = new ListFrame();
+
+        lf.add(new Frame(5, 5));
+        lf.add(new Frame(5, 5));
+        lf.add(new Frame(5, 5));
+        lf.add(new Frame(5, 5));
+        lf.add(new Frame(5, 5));
+        lf.add(new Frame(5, 5));
+        lf.add(new Frame(5, 5));
+        lf.add(new Frame(5, 5));
+        lf.add(new Frame(5, 5));
+        lf.add(new Frame(5, 5));
 
         System.out.println(lf.calculScore());
     }
