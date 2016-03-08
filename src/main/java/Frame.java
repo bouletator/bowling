@@ -34,20 +34,9 @@ public class Frame {
         return strike;
     }
 
-
     public int calculScore()
     {
-        return this.score_lancer_1 + this.score_lancer_2;
-    }
-
-    public int calculScore(Frame f)
-    {
-        return f.calculScore(f) + 10
-        return f.calculScore() + 10;
-    }
-
-    public int calculScore(int lancer)
-    {
-        return lancer + 10;
+        if(this.strike || this.spare) return 10;
+        else return this.score_lancer_1 + this.score_lancer_2;
     }
 }
