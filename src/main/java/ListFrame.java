@@ -21,20 +21,17 @@ public class ListFrame {
     {
         int score = 0;
 
-        for(int i =0; i < this.list.size(); i++)
+        for(int i =0; i < 10; i++)
         {
             if(this.list.get(i).isStrike())
             {
                 if(this.list.get(i+1).isStrike() || this.list.get(i+1).isSpare())
-                    score += this.list.get(i).calculScore() + this.list.get(i+1).calculScore() + this.list.get(i+2).getScore_lancer_1();
+                   score += this.list.get(i).calculScore() + this.list.get(i+1).calculScore() + this.list.get(i+2).getScore_lancer_1();
                 else
                     score += this.list.get(i).calculScore() + this.list.get(i+1).calculScore();
             }
             else if(this.list.get(i).isSpare())
-            {
-               if(i == 9) score += this.list.get(i).calculScore() + this.list.get(i).getScore_lancer_3();
-               else score += this.list.get(i).calculScore() + this.list.get(i+1).getScore_lancer_1();
-            }
+                score += this.list.get(i).calculScore() + this.list.get(i+1).getScore_lancer_1();
             else score += this.list.get(i).calculScore();
         }
 

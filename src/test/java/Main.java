@@ -52,7 +52,9 @@ public class Main {
         lf.add(new Frame(10, 0));
         lf.add(new Frame(10, 0));
         lf.add(new Frame(10, 0));
-        lf.add(new Frame(10, 0, 10));
+        lf.add(new Frame(10, 0));
+        lf.add(new Frame(10, 0));
+        lf.add(new Frame(10, 0));
 
 
         System.out.println(lf.calculScore());
@@ -72,7 +74,8 @@ public class Main {
         lf.add(new Frame(5, 5));
         lf.add(new Frame(5, 5));
         lf.add(new Frame(5, 5));
-        lf.add(new Frame(5, 5, 5));
+        lf.add(new Frame(5, 5));
+        lf.add(new Frame(5, 0));
 
         System.out.println(lf.calculScore());
     }
