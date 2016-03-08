@@ -6,6 +6,7 @@ import java.util.ArrayList;
  * Created by 21504999 on 07/03/2016.
  */
 public class Main {
+
     @Test
     public void Test_01()
     {
@@ -51,7 +52,7 @@ public class Main {
         lf.add(new Frame(10, 0));
         lf.add(new Frame(10, 0));
         lf.add(new Frame(10, 0));
-        lf.add(new Frame(10, 0));
+        lf.add(new Frame(10, 0, 10));
 
 
         System.out.println(lf.calculScore());
@@ -71,7 +72,7 @@ public class Main {
         lf.add(new Frame(5, 5));
         lf.add(new Frame(5, 5));
         lf.add(new Frame(5, 5));
-        lf.add(new Frame(5, 5));
+        lf.add(new Frame(5, 5, 5));
 
         System.out.println(lf.calculScore());
     }
